@@ -1,5 +1,6 @@
 program notes_project;
 
+
 uses
   Vcl.Forms,
   notes in 'notes.pas' {Note};

@@ -2,8 +2,8 @@
 <BorlandProject>
 	<Transactions>
     <Transaction>2023/06/13 23:13:49.000.329,=F:\Coding\Delphi\Unit1.pas</Transaction>
-    <Transaction>2023/06/13 23:14:06.000.567,F:\Coding\Delphi\Unit1.pas=F:\Coding\Delphi\bloco note\notes.pas</Transaction>
-    <Transaction>2023/06/13 23:14:06.000.567,F:\Coding\Delphi\Unit1.dfm=F:\Coding\Delphi\bloco note\notes.dfm</Transaction>
-    <Transaction>2023/06/13 23:14:16.000.374,F:\Coding\Delphi\Project1.dproj=F:\Coding\Delphi\bloco note\notes_project.dproj</Transaction>
+    <Transaction>2023/06/13 23:14:06.000.567,F:\Coding\Delphi\bloco note\notes.dfm=F:\Coding\Delphi\Unit1.dfm</Transaction>
+    <Transaction>2023/06/13 23:14:06.000.567,F:\Coding\Delphi\bloco note\notes.pas=F:\Coding\Delphi\Unit1.pas</Transaction>
+    <Transaction>2023/06/13 23:14:16.000.374,F:\Coding\Delphi\bloco note\notes_project.dproj=F:\Coding\Delphi\Project1.dproj</Transaction>
   </Transactions>
 </BorlandProject>
