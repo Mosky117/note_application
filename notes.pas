@@ -27,7 +27,7 @@ type
     procedure save_as_buttonClick(Sender: TObject);
     procedure edit_buttonClick(Sender: TObject);
     procedure rova1Click(Sender: TObject);
-    procedure FormResize(Sender: TObject);
+//    procedure FormResize(Sender: TObject);
   private
     { Private declarations }
   public
@@ -42,14 +42,14 @@ uses
   Math;
 {$R *.dfm}
 
-procedure TNote.FormResize(Sender: TObject);
-var
-  ratio: double;
-begin
-  ratio:= min(clientwidth/screen.Width, clientheight/screen.height);
-  ScaleBy(trunc(ratio *100),100);
-
-end;
+//procedure TNote.FormResize(Sender: TObject);
+//var
+//  ratio: double;
+//begin
+//  ratio:= min(clientwidth/screen.Width, clientheight/screen.height);
+//  ScaleBy(trunc(ratio *100),100);
+//
+//end;
 
 procedure TNote.edit_buttonClick(Sender: TObject);
 var

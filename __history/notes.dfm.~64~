@@ -3,8 +3,8 @@ object Note: TNote
   Left = 0
   Top = 0
   Caption = 'Note'
-  ClientHeight = 969
-  ClientWidth = 1861
+  ClientHeight = 597
+  ClientWidth = 1069
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -13,17 +13,16 @@ object Note: TNote
   Font.Style = []
   TextHeight = 15
   object screen: TPanel
-    Left = 2
-    Top = 8
-    Width = 1862
-    Height = 966
+    Left = 0
+    Top = 0
+    Width = 1065
+    Height = 593
     Caption = 'screen'
     TabOrder = 0
-    OnResize = FormResize
     object Panel1: TPanel
-      Left = 4
+      Left = 0
       Top = 1
-      Width = 1857
+      Width = 1065
       Height = 41
       Color = clTeal
       ParentBackground = False
@@ -32,7 +31,7 @@ object Note: TNote
         AlignWithMargins = True
         Left = 4
         Top = 4
-        Width = 1849
+        Width = 1057
         Height = 37
         ButtonHeight = 21
         ButtonWidth = 62
@@ -43,6 +42,7 @@ object Note: TNote
         TabOrder = 0
         Transparent = True
         Wrapable = False
+        ExplicitWidth = 905
         object file_button: TToolButton
           AlignWithMargins = True
           Left = 0
@@ -69,10 +69,10 @@ object Note: TNote
     end
     object text: TMemo
       AlignWithMargins = True
-      Left = 4
-      Top = 37
-      Width = 1853
-      Height = 925
+      Left = 0
+      Top = 48
+      Width = 1065
+      Height = 545
       Lines.Strings = (
         'text')
       ScrollBars = ssBoth
@@ -99,17 +99,11 @@ object Note: TNote
     Top = 320
   end
   object edit_popup_menu: TPopupMenu
-    Left = 888
-    Top = 360
+    Left = 776
+    Top = 368
     object rova1: TMenuItem
       Caption = 'Trova'
       OnClick = rova1Click
     end
-  end
-  object my_FormResizer: TFormResizer
-    MinFontSize = 8
-    MaxFontSize = 48
-    Left = 1234
-    Top = 616
   end
 end

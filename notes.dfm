@@ -2,9 +2,10 @@ object Note: TNote
   AlignWithMargins = True
   Left = 0
   Top = 0
+  AutoSize = True
   Caption = 'Note'
-  ClientHeight = 597
-  ClientWidth = 1069
+  ClientHeight = 593
+  ClientWidth = 1065
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -42,7 +43,6 @@ object Note: TNote
         TabOrder = 0
         Transparent = True
         Wrapable = False
-        ExplicitWidth = 905
         object file_button: TToolButton
           AlignWithMargins = True
           Left = 0

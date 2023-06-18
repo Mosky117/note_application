@@ -5,8 +5,7 @@ interface
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ToolWin, Vcl.ComCtrls, Vcl.StdCtrls,
-  Vcl.ExtCtrls, Vcl.Menus, System.Actions, Vcl.ActnList, Xml.xmldom,
-  Xml.XmlTransform, Easysize;
+  Vcl.ExtCtrls, Vcl.Menus, System.Actions, Vcl.ActnList;
 
 type
   TNote = class(TForm)
@@ -23,12 +22,12 @@ type
     edit_popup_menu: TPopupMenu;
     rova1: TMenuItem;
     screen: TPanel;
-    my_FormResizer: TFormResizer;
     procedure file_buttonClick(Sender: TObject);
     procedure open_file_buttonClick(Sender: TObject);
     procedure save_as_buttonClick(Sender: TObject);
     procedure edit_buttonClick(Sender: TObject);
     procedure rova1Click(Sender: TObject);
+    procedure FormResize(Sender: TObject);
   private
     { Private declarations }
   public
@@ -43,14 +42,14 @@ uses
   Math;
 {$R *.dfm}
 
-//procedure TNote.FormResize(Sender: TObject);
-//var
-//  ratio: double;
-//begin
-//  ratio:= min(clientwidth/screen.Width, clientheight/screen.height);
-//  ScaleBy(trunc(ratio *100),100);
-//
-//end;
+procedure TNote.FormResize(Sender: TObject);
+var
+  ratio: double;
+begin
+  ratio:= min(clientwidth/screen.Width, clientheight/screen.height);
+  ScaleBy(trunc(ratio *100),100);
+
+end;
 
 procedure TNote.edit_buttonClick(Sender: TObject);
 var
