@@ -1,0 +1,73 @@
+object Note: TNote
+  Left = 0
+  Top = 0
+  Caption = 'Note'
+  ClientHeight = 442
+  ClientWidth = 628
+  Color = clGrayText
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -12
+  Font.Name = 'Segoe UI'
+  Font.Style = []
+  Menu = toolbar
+  TextHeight = 15
+  object PageControl: TPageControl
+    Left = 0
+    Top = 0
+    Width = 628
+    Height = 442
+    ActivePage = tab
+    Align = alClient
+    TabOrder = 0
+    ExplicitWidth = 624
+    ExplicitHeight = 441
+    object tab: TTabSheet
+      Caption = 'Senza Nome'
+      object text: TMemo
+        Left = 0
+        Top = 0
+        Width = 620
+        Height = 412
+        Align = alClient
+        Color = clBtnFace
+        ImeName = 'Italian'
+        Lines.Strings = (
+          'text')
+        TabOrder = 0
+        ExplicitWidth = 616
+        ExplicitHeight = 411
+      end
+    end
+  end
+  object toolbar: TMainMenu
+    Left = 456
+    Top = 304
+    object file_toolbar: TMenuItem
+      Caption = 'File'
+      object new_sheet: TMenuItem
+        Caption = 'Nuova Scheda'
+        OnClick = new_sheetClick
+      end
+      object saveAs: TMenuItem
+        Caption = 'Salva con nome'
+        OnClick = saveAsClick
+      end
+      object open_file: TMenuItem
+        Caption = 'Apri'
+        OnClick = open_fileClick
+      end
+      object close: TMenuItem
+        Caption = 'Chiudi Scheda'
+        OnClick = closeClick
+      end
+    end
+    object edit_toolbar: TMenuItem
+      Caption = 'Modifica'
+      object find: TMenuItem
+        Caption = 'Trova'
+        OnClick = findClick
+      end
+    end
+  end
+end
